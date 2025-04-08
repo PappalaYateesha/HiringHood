@@ -1,0 +1,9 @@
+
+.App {
+  flex: content;
+  text-align: center;
+  font-size:5vh;
+  font-weight:bolder;
+  font-style: italic;
+}
+
