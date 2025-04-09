@@ -11,7 +11,6 @@ const HomePage = () => {
 
   return (
     <Container maxWidth="md">
-      {/* Header */}
       <Typography 
         variant="h3" 
         gutterBottom 
@@ -19,8 +18,6 @@ const HomePage = () => {
       >
         📖 Recipe Book
       </Typography>
-
-      {/* Add Recipe Button */}
       <Box sx={{ textAlign: "center", mb: 4 }}>
         <Button 
           variant="contained" 
@@ -38,8 +35,6 @@ const HomePage = () => {
           Add New Recipe
         </Button>
       </Box>
-
-      {/* Recipe List */}
       <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 3 }}>
         {recipes.map((recipe) => (
           <Card 

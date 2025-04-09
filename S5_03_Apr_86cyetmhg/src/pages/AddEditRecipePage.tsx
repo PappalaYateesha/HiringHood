@@ -37,11 +37,11 @@ const AddEditRecipePage = () => {
       ingredients: Yup.string().required("Ingredients are required"),
       instructions: Yup.string().required("Instructions are required"),
       image: Yup.string().test("image-required", "Image is required", function (value) {
-        const { imageType } = this.parent; // Access the form field value
+        const { imageType } = this.parent;
         if (imageType === "url") {
           return Yup.string().url().isValidSync(value);
         }
-        return true; // No validation for uploaded images
+        return true;
       }),
       
     }),
